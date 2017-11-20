@@ -1,0 +1,11 @@
+Nome: Rodrigo Epaminondas da Fonseca.
+CPD:43085
+
+CREATE DATABASE teste;
+
+CREATE TABLE `FUNCIONARIOS` (
+  `id_funcionarios` INT NOT NULL AUTO_INCREMENT,
+  `nome_funcionarios` VARCHAR(45) NULL,
+  `Cargo_funcionarios` VARCHAR(45) NULL,
+  `idade_funcionarios` INT NULL,
+  PRIMARY KEY (`id_funcionarios`));
