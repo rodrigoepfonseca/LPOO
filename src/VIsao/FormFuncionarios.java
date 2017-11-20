@@ -33,7 +33,7 @@ public class FormFuncionarios extends javax.swing.JFrame {
     
     public FormFuncionarios() {
         initComponents();
-        preencherTabela("SELECT * FROM FUNCIONARIOS ORDER BY NOME_FUNCIONARIOS");
+        preencherTabela("SELECT * FROM FUNCIONARIOS ORDER BY nome_funcionarios");
     }
 
     /**
@@ -409,7 +409,7 @@ public class FormFuncionarios extends javax.swing.JFrame {
                 
             }while(conexao.rs.next());
         }catch(SQLException ex){
-                    JOptionPane.showMessageDialog(rootPane, "Erro no ArrayList"+ex);
+                    JOptionPane.showMessageDialog(rootPane, "Lista de Funcionários vazia\n"+ex);
         }
         ModeloTabela modelo = new ModeloTabela(dados,colunas);
 
